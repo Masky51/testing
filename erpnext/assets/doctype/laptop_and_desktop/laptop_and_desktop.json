@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 18:05:32.704503",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "type",
+  "column_break_tri12",
+  "model_name",
+  "category_group",
+  "processor_and_memory_features_section",
+  "color",
+  "processor_variant",
+  "ram",
+  "column_break_t4ws1",
+  "primary_storage",
+  "primary_storage_size",
+  "secondary_storage",
+  "secondary_storage_size",
+  "additional_features_section",
+  "screen_size",
+  "operating_system",
+  "column_break_cnbcp",
+  "touchscreen",
+  "warranty_summary",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Laptop\nDesktop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tri12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "processor_and_memory_features_section",
+   "fieldtype": "Section Break",
+   "label": "Processor And Memory Features"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "processor_variant",
+   "fieldtype": "Data",
+   "label": "Processor Variant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ram",
+   "fieldtype": "Data",
+   "label": "RAM"
+  },
+  {
+   "fieldname": "column_break_t4ws1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_storage",
+   "fieldtype": "Select",
+   "label": "Primary Storage",
+   "options": "SSD\nHDD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "primary_storage_size",
+   "fieldtype": "Data",
+   "label": "Primary Storage Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secondary_storage",
+   "fieldtype": "Select",
+   "label": "Secondary Storage",
+   "options": "None\nSSD\nHDD"
+  },
+  {
+   "fieldname": "secondary_storage_size",
+   "fieldtype": "Data",
+   "label": "Secondary Storage Size"
+  },
+  {
+   "fieldname": "additional_features_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Features"
+  },
+  {
+   "fieldname": "screen_size",
+   "fieldtype": "Data",
+   "label": "Screen Size"
+  },
+  {
+   "fieldname": "operating_system",
+   "fieldtype": "Data",
+   "label": "Operating System"
+  },
+  {
+   "fieldname": "column_break_cnbcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "touchscreen",
+   "fieldtype": "Select",
+   "label": "Touchscreen",
+   "options": "YES\nNO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warranty_summary",
+   "fieldtype": "Data",
+   "label": "Warranty Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "ACC-LD-ASS-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 18:21:14.743153",
+ "modified_by": "Administrator",
+ "module": "Assets",
+ "name": "Laptop and Desktop",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

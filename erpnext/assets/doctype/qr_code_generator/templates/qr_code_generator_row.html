@@ -1,0 +1,213 @@
+
+<!-- <small>{{ doc.short_url }}</small> -->
+
+
+
+
+<style>
+	@media print {
+			/* Hide every other element */
+			body * {
+				visibility: hidden;
+			}
+			/* Then displaying print container elements */
+			.print-container, .print-container * {
+				visibility: visible;
+			/* Adjusting the position to always start from top left */
+			.print-container {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+		}
+	}
+</style>
+<button onclick="window.print();">
+	print
+</button>
+<div>
+	<dl class="row print-container">
+        <div class="col-4">
+			<h3 style="text-align:center"><small>{{ doc.short_url }}</small></h3>
+			<a href="{{ route }}">
+
+            	<img src="{{ doc.qr_code }}" class="img-responsive">
+
+			</a>
+        </div>
+</dl>         
+</div>
+
+<!-- <div class="page-break print-container" style="display: flex; flex-direction: column; flex: 1 1 0%;">
+	<div id="header-html" class="hidden-pdf">
+		
+	
+	<div class="print-heading">
+		<h2>
+			<small class="sub-heading">{{ doc.short_url }}</small>
+		</h2>
+	</div>
+	
+	</div>
+	
+	<div class="row section-break" data-label="URL Shortener">
+			<div class="col-xs-6 column-break">
+			
+				<div style="padding: 10px 0px" data-fieldname="long_url" data-fieldtype="Text">
+					<label>Long URL: </label>
+					{{ doc.long_url }}
+				</div>
+			
+				
+		
+				<div class="row  data-field" data-fieldname="short_url" data-fieldtype="Data">
+					<div class="col-xs-5">
+						
+						<label>Short URL: </label>
+						
+					</div>
+					<div class="col-xs-7 value">
+						
+					{{ doc.short_url }}
+		
+					</div>
+				</div>
+		
+		
+				<div class="row  data-field" data-fieldname="route" data-fieldtype="Data">
+					<div class="col-xs-5">
+						
+						<label>route: </label>
+						
+					</div>
+					<div class="col-xs-7 value">
+
+					{{ doc.route }}
+		
+					</div>
+				</div>
+		
+			</div>
+		
+			<div class="col-xs-6 column-break">
+			
+				<a href="{{ route }}">
+
+				<img src="{{ doc.qr_code }}" class="img-responsive">
+	
+				</a>
+			
+			</div>
+		
+	</div>
+	
+</div> -->
+
+
+
+<!-- 
+<div class="page-break" style="display: flex; flex-direction: column; flex: 1 1 0%;">
+	<div id="header-html" class="hidden-pdf">
+		
+	
+	<div class="print-heading">
+		<h2>
+			<div>Shortener</div>
+			<small class="sub-heading">nsUYF</small>
+		</h2>
+	</div>
+	
+	</div>
+
+	
+	<div id="footer-html" class="visible-pdf" style="
+			display: block !important;
+			order: 1;
+			margin-top: auto;
+			padding-top: var(--padding-xl)
+		">
+		
+		<p class="text-center small page-number visible-pdf">
+			Page <span class="page"></span> of <span class="topage"></span>
+		</p>
+	</div>
+	
+
+	
+	<div class="row section-break" data-label="URL Shortener">
+			<div class="col-xs-6 column-break">
+			
+				<div style="padding: 10px 0px" data-fieldname="long_url" data-fieldtype="Text"><label>Long URL</label>https://meet.google.com/uzq-vyvf-nre
+</div>
+			
+				
+		
+			<div class="row  data-field" data-fieldname="short_url" data-fieldtype="Data">
+				<div class="col-xs-5">
+					
+					<label>Short URL: </label>
+					
+				</div>
+				<div class="col-xs-7
+				
+	 value">
+					nsUYF
+	
+				</div>
+			</div>
+		
+			
+				
+		
+			<div class="row  data-field" data-fieldname="route" data-fieldtype="Data">
+				<div class="col-xs-5">
+					
+					<label>route: </label>
+					
+				</div>
+				<div class="col-xs-7
+				
+	 value">
+					nsUYF
+	
+				</div>
+			</div>
+		
+			
+				
+		
+			<div class="row  data-field" data-fieldname="published" data-fieldtype="Check">
+				<div class="col-xs-9">
+					
+					<label>published: </label>
+					
+				</div>
+				<div class="col-xs-3
+				
+	text-center value">
+					
+		 <i class="fa fa-check"></i> -->
+		<!--<svg viewBox="0 0 16 16" fill="transparent" stroke="#1F272E" stroke-width="2" xmlns="http://www.w3.org/2000/svg" id="icon-tick" style="width: 12px; height: 12px; margin-top: 5px;">
+			<path d="M2 9.66667L5.33333 13L14 3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+		</svg>
+	
+				</div>
+			</div>
+		
+			
+			</div>
+		
+			<div class="col-xs-6 column-break">
+			
+				
+		<img src="data:image/png;base64,iVBORw0KGgoAAAA" class="img-responsive">
+	
+
+			
+			</div>
+		
+	</div>
+	
+</div>            
+-->
+<!-- this is a sample default list template -->

@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:asset_name",
+ "creation": "2023-05-23 13:08:18.050943",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_01",
+  "long_url",
+  "logo",
+  "short_url",
+  "route",
+  "published",
+  "cb_01",
+  "qr_code",
+  "qr_preview",
+  "section_break_l8kqq",
+  "asset_name",
+  "item_code",
+  "location",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "QR Code Generator"
+  },
+  {
+   "fieldname": "long_url",
+   "fieldtype": "Text",
+   "label": "Long URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "short_url",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Short URL",
+   "unique": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "route",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "published",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "QR Code"
+  },
+  {
+   "fieldname": "qr_preview",
+   "fieldtype": "HTML",
+   "label": "QR Preview",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Asset",
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QR Code Generator",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Asset Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_l8kqq",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "has_web_view": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-15 14:23:12.101918",
+ "modified_by": "Administrator",
+ "module": "Assets",
+ "name": "QR Code Generator",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "qrcodes",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

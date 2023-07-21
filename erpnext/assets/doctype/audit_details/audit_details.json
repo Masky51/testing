@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:asset_name",
+ "creation": "2023-06-26 18:37:18.042486",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_name",
+  "location_name",
+  "time",
+  "image",
+  "preview",
+  "column_break_efsf3",
+  "latitude",
+  "longitude",
+  "coordinates",
+  "encryption",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Link",
+   "label": "Asset ID",
+   "options": "Asset",
+   "unique": 1
+  },
+  {
+   "fieldname": "location_name",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Image",
+   "label": "Preview",
+   "options": "encryption"
+  },
+  {
+   "fieldname": "column_break_efsf3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "coordinates",
+   "fieldtype": "Data",
+   "label": "Coordinates"
+  },
+  {
+   "fieldname": "encryption",
+   "fieldtype": "Long Text",
+   "label": "Encryption"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2023-06-26 18:47:01.129635",
+ "modified_by": "Administrator",
+ "module": "Assets",
+ "name": "audit_details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "auditdetails",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-26 18:25:13.135891",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "model_name",
+  "operating_system",
+  "column_break_nqrgq",
+  "category_group",
+  "sim_type",
+  "color",
+  "additional_features_section",
+  "display_size",
+  "processor_type",
+  "network_type",
+  "column_break_dqihw",
+  "internal_storage",
+  "ram",
+  "warranty_summary",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operating_system",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Operating system",
+   "options": "Android\nIOS"
+  },
+  {
+   "fieldname": "column_break_nqrgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category_group",
+   "fieldtype": "Data",
+   "label": "Category Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sim_type",
+   "fieldtype": "Select",
+   "label": "SIM Type",
+   "options": "Single Slot\nDual Sim",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "additional_features_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Features"
+  },
+  {
+   "fieldname": "display_size",
+   "fieldtype": "Data",
+   "label": "Display Size"
+  },
+  {
+   "fieldname": "processor_type",
+   "fieldtype": "Data",
+   "label": "Processor Type"
+  },
+  {
+   "fieldname": "network_type",
+   "fieldtype": "Select",
+   "label": "Network Type",
+   "options": "5G\n4G",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dqihw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "internal_storage",
+   "fieldtype": "Data",
+   "label": "Internal Storage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ram",
+   "fieldtype": "Data",
+   "label": "RAM"
+  },
+  {
+   "fieldname": "warranty_summary",
+   "fieldtype": "Data",
+   "label": "Warranty Summary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming series",
+   "options": "ACC-LD-ASS-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 18:29:52.728365",
+ "modified_by": "Administrator",
+ "module": "Assets",
+ "name": "SmartPhone",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

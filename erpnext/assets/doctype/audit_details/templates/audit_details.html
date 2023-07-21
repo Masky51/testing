@@ -1,0 +1,25 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+
+    <div class="col-sm-2">
+
+        <img alt="{{ asset_name }}" src="{{ image }}">
+
+    </div>
+
+    <div class="col">
+
+        <h1>{{ asset_name }}</h1>
+
+        <p class="lead">Location: {{ location_name }}</p>
+
+        <p class="lead">Coordinates: <strong>{{ coordinates }}</strong></p>
+
+    </div>
+
+</div>
+
+{% endblock %}
